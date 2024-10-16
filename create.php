@@ -9,11 +9,11 @@
         <input type="hidden" name="type" value="create">
         <div class="form-group">
             <label for="name">Nome do Contato:</label>
-            <input type="text" class= "form-control"id="name" name="name" placeholder="Digite o nome" required>
+            <input type="text" class= "form-control"id="name" name="name" placeholder="Digite o nome" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" title="O nome deve conter apenas letras e espaços." required>
         </div>
         <div class="form-group">
             <label for="phone">Telefone do Contato:</label>
-            <input type="text" class= "form-control"id="phone" name="phone" placeholder="Digite o Telefone"required>
+            <input type="text" class= "form-control"id="phone" name="phone" placeholder="Digite o Telefone" pattern="\(\d{2}\) \d{5}-\d{4}" title="O formato deve ser (XX) XXXXX-XXXX" required>
         </div>
         <div class="form-group">
             <label for="observations">Observação:</label>
