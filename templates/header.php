@@ -1,8 +1,7 @@
 <?php
     include_once("config/url.php");
+    include_once("config/process.php");
 ?>
-
-
 <!DOCTYPE html>
 <html lang="pt-bt">
 <head>
@@ -29,7 +28,7 @@
           <a class="nav-link active" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="create.php">Features</a>
+          <a class="nav-link active" href="create.php">Criar Contato</a>
         </li>
       </ul>
     </div>
