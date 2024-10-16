@@ -13,7 +13,7 @@
             <th scope="col">#</th>
             <th scope="col">Nome</th>
             <th scope="col">Telefone</th>
-            <th scope="col"></th>
+            <th scope="col">Ações</th>
           </tr>
         </thead>
         <tbody>
@@ -25,7 +25,7 @@
               <td class="actions">
                 <a href="<?= $BASE_URL ?>show.php?id=<?= $contact["id"] ?>"><i class="fas fa-eye check-icon"></i></a>
                 <a href="<?= $BASE_URL ?>edit.php?id=<?= $contact["id"] ?>"><i class="far fa-edit edit-icon"></i></a>
-                <form class="delete-form" action="<?= $BASE_URL ?>/config/process.php" method="POST">
+                <form class="delete-form" action="<?= $BASE_URL ?>config/process.php" method="POST">
                   <input type="hidden" name="type" value="delete">
                   <input type="hidden" name="id" value="<?= $contact["id"] ?>">
                   <button type="submit" class="delete-btn"><i class="fas fa-times delete-icon"></i></button>
