@@ -2,7 +2,27 @@
     include_once("templates/header.php");
     ?>
 
-<h1>criando contato</h1>
+    <div class="container">
+   
+    <h1 id="main-title">Criar Contato</h1>
+    <form id="create-form" action="<?= $BASE_URL ?>config/process.php" method="POST">
+        <input type="hidden" name="type" value="create">
+        <div class="form-group">
+            <label for="name">Nome do Contato:</label>
+            <input type="text" class= "form-control"id="name" name="name" placeholder="Digite o nome" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Telefone do Contato:</label>
+            <input type="text" class= "form-control"id="phone" name="phone" placeholder="Digite o Telefone"required>
+        </div>
+        <div class="form-group">
+            <label for="observations">Observação:</label>
+            <textarea type="text" class= "form-control"id="observations" name="observations" placeholder="Digite as observação" rows ="3" required ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar</button> 
+        <button type="button" class="btn btn-warning"><a href="<?= $BASE_URL ?>index.php">Voltar</a></button>
+    </form>
+    </div>
 
 <?php
     include_once("templates/footer.php");
